@@ -1,0 +1,84 @@
+// base table stylesheets
+
+%cell-background-hpadding {
+  &:first-child {
+    padding-left: .5em;
+  }
+
+  @include last-child() {
+    padding-right: .5em;
+  }
+  &:last-of-type {
+    padding-right: .5em;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: em(($base-margin * 2) - 2) 0 0 0;
+  color: $ym-text-color;
+  border: 0;
+  border-bottom: 1px solid #838383;
+
+  caption {
+    font-variant:small-caps;
+  }
+
+  th,
+  td {
+    @extend %cell-background-hpadding;
+
+    line-height: $line-height;
+    @include line-height( 24.02 );
+    vertical-align: top;
+    padding: em( 6 ) 0;
+
+    *:first-child {
+      margin-top: 0;
+    }
+  }
+
+  thead th {
+    @extend %cell-background-hpadding;
+
+    text-align: left;
+    color: $ym-text-color;
+    border: 0;
+    background: #464646;
+  }
+
+  tbody {
+    tr {
+      th {
+        @extend %cell-background-hpadding;
+
+        text-align: left;
+        text-align: left;
+        background: darken( #464646, 8 );
+      }
+
+      td {
+        text-align: left;
+        border-top: 1px solid #838383;
+      }
+
+      /* highlight row on mouse over */
+      &:hover td {
+        background: darken( #464646, 20 );
+      }
+    }
+
+    tr:first-of-type td {
+      border-top: 0;
+    }
+  }
+
+  tfoot {
+    tr td {
+      @extend %cell-background-hpadding;
+
+      background: #464646;
+    }
+  }
+}

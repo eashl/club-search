@@ -1,0 +1,12 @@
+// base screen styles within @media screen, projection { ... }
+
+html,
+body,
+form {
+  padding: 0;
+}
+
+/* force vertical scrollbar */
+body {
+  //overflow-y: scroll;
+}

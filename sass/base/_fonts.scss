@@ -1,0 +1,34 @@
+// web font integration
+
+$font-path: "/fonts" !default;
+
+@include font-face( "vantourer", "vantourer53607/fonts/vantourer", "vantourer", $font-path, normal);
+
+@include font-face("Open Sans", "Open-Sans/OpenSans-Regular-webfont", "OpenSansRegular", $font-path, normal);
+@include font-face("Open Sans", "Open-Sans/OpenSans-Bold-webfont", "OpenSansBold", $font-path, bold);
+@include font-face("Open Sans", "Open-Sans/OpenSans-Italic-webfont", "OpenSansItalic", $font-path, normal, italic);
+@include font-face("Open Sans", "Open-Sans/OpenSans-BoldItalic-webfont", "OpenSansBoldItalic", $font-path, bold, italic);
+
+//@include font-face("CartoGothic Std", "CartoGothic-Std/CartoGothicStd-Book-webfont", "CartoGothicStdBook", $font-path, normal);
+//@include font-face("CartoGothic Std", "CartoGothic-Std/CartoGothicStd-Bold-webfont", "CartoGothicStdBold", $font-path, bold);
+//@include font-face("CartoGothic Std", "CartoGothic-Std/CartoGothicStd-Italic-webfont", "CartoGothicStdItalic", $font-path, normal, italic);
+//@include font-face("CartoGothic Std", "CartoGothic-Std/CartoGothicStd-BoldItalic-webfont", "CartoGothicStdBoldItalic", $font-path, bold, italic);
+
+//@include font-face("Droid Sans", "Droid-Sans/DroidSans-webfont", "DroidSansRegular", $font-path, normal);
+//@include font-face("Droid Sans", "Droid-Sans/DroidSans-Bold-webfont", "DroidSansBold", $font-path, bold);
+
+//@include font-face("Droid Serif", "Droid-Serif/DroidSerif-Regular-webfont", "DroidSerifRegular", $font-path, normal);
+//@include font-face("Droid Serif", "Droid-Serif/DroidSerif-Bold-webfont", "DroidSerifBold", $font-path, bold);
+//@include font-face("Droid Serif", "Droid-Serif/DroidSerif-Italic-webfont", "DroidSerifItalic", $font-path, normal, italic);
+//@include font-face("Droid Serif", "Droid-Serif/DroidSerif-BoldItalic-webfont", "DroidSerifBoldItalic", $font-path, bold, italic);
+
+//@include font-face("PT Sans", "PT-Sans/PTS55F-webfont", "PTSansRegular", $font-path, normal);
+//@include font-face("PT Sans", "PT-Sans/PTS75F-webfont", "PTSansBold", $font-path, bold);
+//@include font-face("PT Sans", "PT-Sans/PTS56F-webfont", "PTSansItalic", $font-path, normal, italic);
+//@include font-face("PT Sans", "PT-Sans/PTS76F-webfont", "PTSansBoldItalic", $font-path, bold, italic);
+
+//@include font-face("PT Sans Caption", "PT-Sans/PTC55F-webfont", "PTSansRegular", $font-path, normal);
+//@include font-face("PT Sans Caption", "PT-Sans/PTC75F-webfont", "PTSansBold", $font-path, bold);
+
+//@include font-face("PT Sans Narrow", "PT-Sans/PTN57F-webfont", "PTSansNarrowRegular", $font-path, normal);
+//@include font-face("PT Sans Narrow", "PT-Sans/PTN77F-webfont", "PTSansNarrowBold", $font-path, bold);

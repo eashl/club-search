@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>EASHL PS3 Club search</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="robots" content="noindex,nofollow">
+
+  <base href="http://eashl.local:8888/"/>
+
+  <!--[if ! lte IE 6]><!-->
+  <link rel="stylesheet" href="css/dev/main.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="css/prod/patch_lte_ie8.css">
+  <![endif]-->
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" href="css/prod/patch_lte_ie7.css">
+  <![endif]-->
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="http://universal-ie6-css.googlecode.com/files/ie6.1.b.css" media="screen, projection">
+  <![endif]-->
+
+  <link rel="dns-prefetch" href="http://ajax.googleapis.com" />
+
+  <script src="js/dev/vendor/modernizr-2.6.2.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+  <div class="ym-wrapper">
+    <div class="ym-wbox">
+      <header id="header" role="banner">
+        <ul class="ym-skiplinks" role="navigation">
+          <li><a class="ym-skip" href="#content">Skip to main content (Press Enter).</a></li>
+          <li><a class="ym-skip" href="#navigation">Skip to navigation (Press Enter).</a></li>
+          <li><a class="ym-skip" href="#contentinfo">Skip to footer (Press Enter).</a></li>
+        </ul>
+        <div id="logo">
+          <a href="http://www.easportsworld.com/en_US/clubs/nhl12" target="_blank">
+            <img src="img/nav_ea_logo.png" alt="Logo" />
+          </a>
+        </div>
+      </header>
+      <section id="main" role="main">
+        <a id="content"></a>
+
+        <form action="http://www.easportsworld.com/en_US/clubs/nhl14/search" id="searchForm" method="get" class="ym-form ym-full" target="_blank">
+          <div class="ym-grid">
+            <div class="ym-gl ym-g50">
+              <div class="ym-gbox-left">
+                <fieldset>
+                  <legend>Club</legend>
+                  <div class="ym-fbox-text">
+                    <label for="find_abbreviation">Club Abbreviation</label>
+                    <input type="text" id="find_abbreviation" name="find[abbreviation]" autofocus />
+                  </div>
+                  <div class="ym-fbox-text">
+                    <label for="find_name">Club Name</label>
+                    <input type="text" id="find_name" name="find[name]" />
+                  </div>
+
+                  <div class="ym-fbox-select">
+                    <label for="find_teamId">Team</label>
+                    <select name="find[team_leagueId]" id="find_team_leagueId" size=1>
+                      <option value="">All</option>
+                      <option value="0">NHL</option>
+                      <option value="1">AHL</option>
+                      <option value="2">Swedish</option>
+                      <option value="3">Finnish</option>
+                      <option value="4">German</option>
+                      <option value="5">Czech</option>
+                      <option value="6">Swiss</option>
+                      <option value="7">International</option>
+                      <option value="8">OHL</option>
+                      <option value="9">QMJHL</option>
+                      <option value="10">WHL</option>
+                      <option value="11">Prospects</option>
+                    </select>
+                  </div>
+
+                  <div class="ym-fbox-select">
+                    <select name="find[teamId]" id="find_teamId" size=1>
+                      <option value="">Any</option>
+                      <option value="0">Anaheim Ducks™</option>
+                      <option value="1">Winnipeg Jets™</option>
+                      <option value="2">Boston Bruins®</option>
+                      <option value="3">Buffalo Sabres®</option>
+                      <option value="4">Calgary Flames®</option>
+                      <option value="5">Carolina Hurricanes®</option>
+                      <option value="6">Chicago Blackhawks®</option>
+                      <option value="7">Colorado Avalanche®</option>
+                      <option value="8">Columbus Blue Jackets®</option>
+                      <option value="9">Dallas Stars™</option>
+                      <option value="10">Detroit Red Wings®</option>
+                      <option value="11">Edmonton Oilers®</option>
+                      <option value="12">Florida Panthers®</option>
+                      <option value="13">Los Angeles Kings®</option>
+                      <option value="14">Minnesota Wild®</option>
+                      <option value="15">Montreal Canadiens®</option>
+                      <option value="16">Nashville Predators®</option>
+                      <option value="17">New Jersey Devils®</option>
+                      <option value="18">New York Islanders®</option>
+                      <option value="19">New York Rangers®</option>
+                      <option value="20">Ottawa Senators®</option>
+                      <option value="21">Philadelphia Flyers®</option>
+                      <option value="22">Phoenix Coyotes®</option>
+                      <option value="23">Pittsburgh Penguins®</option>
+                      <option value="24">St. Louis Blues®</option>
+                      <option value="25">San Jose Sharks®</option>
+                      <option value="26">Tampa Bay Lightning®</option>
+                      <option value="27">Toronto Maple Leafs®</option>
+                      <option value="28">Vancouver Canucks®</option>
+                      <option value="29">Washington Capitals®</option>
+                      <option value="30">Red All-Stars</option>
+                      <option value="31">Blue All-Stars</option>
+                      <option value="32">Abbotsford Heat</option>
+                      <option value="33">Adirondack Phantoms</option>
+                      <option value="34">Albany Devils</option>
+                      <option value="35">Binghamton Senators</option>
+                      <option value="36">Bridgeport Sound Tigers</option>
+                      <option value="37">Charlotte Checkers</option>
+                      <option value="38">Chicago Wolves®</option>
+                      <option value="39">Connecticut Whale</option>
+                      <option value="40">Grand Rapids Griffins</option>
+                      <option value="41">Hamilton Bulldogs</option>
+                      <option value="42">Hershey Bears®</option>
+                      <option value="43">Houston Aeros</option>
+                      <option value="44">Lake Erie Monsters</option>
+                      <option value="45">Manchester Monarchs</option>
+                      <option value="46">Milwaukee Admirals</option>
+                      <option value="47">Norfolk Admirals</option>
+                      <option value="48">Oklahoma City Barons</option>
+                      <option value="49">Peoria Rivermen</option>
+                      <option value="50">Portland Pirates</option>
+                      <option value="51">Providence Bruins</option>
+                      <option value="52">Rochester Americans</option>
+                      <option value="53">Rockford IceHogs</option>
+                      <option value="54">St. John's AHL</option>
+                      <option value="55">San Antonio Rampage</option>
+                      <option value="56">Springfield Falcons</option>
+                      <option value="57">Syracuse Crunch</option>
+                      <option value="58">Texas Stars</option>
+                      <option value="59">Toronto Marlies</option>
+                      <option value="60">Wilkes-Barre/Scranton Penguins</option>
+                      <option value="61">Worcester Sharks</option>
+                      <option value="62">AIK</option>
+                      <option value="63">Brynäs IF</option>
+                      <option value="64">Djurgårdens IF</option>
+                      <option value="65">Färjestads BK</option>
+                      <option value="66">Frölunda HC</option>
+                      <option value="67">HV 71</option>
+                      <option value="68">Linköpings HC</option>
+                      <option value="69">Luleå HF</option>
+                      <option value="70">MODO Hockey</option>
+                      <option value="71">Skelleftea</option>
+                      <option value="72">Timrå IK</option>
+                      <option value="73">Växjö Lakers</option>
+                      <option value="74">Porin Ässät</option>
+                      <option value="75">Espoo Blues</option>
+                      <option value="76">Helsingin IFK</option>
+                      <option value="77">HPK Hämeenlinna</option>
+                      <option value="78">Tampereen Ilves</option>
+                      <option value="79">Jokerit Helsinki</option>
+                      <option value="80">JYP Jyväskylä</option>
+                      <option value="81">KalPa Kuopio</option>
+                      <option value="82">Oulun Kärpät</option>
+                      <option value="83">Rauman Lukko</option>
+                      <option value="84">Pelicans Lahti</option>
+                      <option value="85">SaiPa Lappeenranta</option>
+                      <option value="86">Tampereen Tappara</option>
+                      <option value="87">TPS Turku</option>
+                      <option value="88">Augsburger Panther</option>
+                      <option value="89">Eisbären Berlin</option>
+                      <option value="90">DEG Metro Stars</option>
+                      <option value="91">Hamburg Freezers</option>
+                      <option value="92">Hannover Scorpions</option>
+                      <option value="93">ERC Ingolstadt</option>
+                      <option value="94">Iserlohn Roosters</option>
+                      <option value="95">Kölner Haie</option>
+                      <option value="96">Krefeld Pinguine</option>
+                      <option value="97">Adler Mannheim</option>
+                      <option value="98">EHC München</option>
+                      <option value="99">Straubing Tigers</option>
+                      <option value="100">Thomas Sabo Ice Tigers</option>
+                      <option value="101">Grizzly Adams Wolfsburg</option>
+                      <option value="102">BK Mladá Boleslav</option>
+                      <option value="103">HC Kometa Brno</option>
+                      <option value="104">HC Mountfield</option>
+                      <option value="105">HC Energie Karlovy Vary</option>
+                      <option value="106">HC Vagnerplast Kladno</option>
+                      <option value="107">Bilí Tygři Liberec</option>
+                      <option value="108">HC BENZINA Litvinov</option>
+                      <option value="109">HC Eaton Pardubice</option>
+                      <option value="110">HC Plzeň 1929</option>
+                      <option value="111">HC Slavia Praha</option>
+                      <option value="112">HC Sparta Praha</option>
+                      <option value="113">HC Oceláři Třinec</option>
+                      <option value="114">HC Vítkovice Steel</option>
+                      <option value="115">PSG Zlín</option>
+                      <option value="116">HC Ambri-Piotta</option>
+                      <option value="117">SC Bern</option>
+                      <option value="118">EHC Biel</option>
+                      <option value="119">HC Davos</option>
+                      <option value="120">HC Fribourg-Gottéron</option>
+                      <option value="121">Genève-Servette HC</option>
+                      <option value="122">Kloten Flyers</option>
+                      <option value="123">HC Lugano</option>
+                      <option value="124">Rapperswil-Jona Lakers</option>
+                      <option value="125">SCL Tigers</option>
+                      <option value="126">ZSC Lions</option>
+                      <option value="127">EV Zug</option>
+                      <option value="128">Austria</option>
+                      <option value="129">Belarus</option>
+                      <option value="130">Canada</option>
+                      <option value="131">Czech Republic</option>
+                      <option value="132">Denmark</option>
+                      <option value="133">Finland</option>
+                      <option value="134">France</option>
+                      <option value="135">Germany</option>
+                      <option value="136">Great Britain</option>
+                      <option value="137">Italy</option>
+                      <option value="138">Japan</option>
+                      <option value="139">Kazakstan</option>
+                      <option value="140">Latvia</option>
+                      <option value="141">Norway</option>
+                      <option value="142">Poland</option>
+                      <option value="143">Russia</option>
+                      <option value="144">Slovakia</option>
+                      <option value="145">Sweden</option>
+                      <option value="146">Switzerland</option>
+                      <option value="147">Ukraine</option>
+                      <option value="148">USA</option>
+                      <option value="149">Barrie Colts</option>
+                      <option value="150">Belleville Bulls</option>
+                      <option value="151">Brampton Battalion</option>
+                      <option value="152">Erie Otters</option>
+                      <option value="153">Guelph Storm</option>
+                      <option value="154">Kingston Frontenacs</option>
+                      <option value="155">Kitchener Rangers</option>
+                      <option value="156">London Knights</option>
+                      <option value="157">Mississauga St. Michael's Majors</option>
+                      <option value="158">Niagara IceDogs</option>
+                      <option value="159">Oshawa Generals</option>
+                      <option value="160">Ottawa 67's</option>
+                      <option value="161">Owen Sound Attack</option>
+                      <option value="162">Peterborough Petes</option>
+                      <option value="163">Plymouth Whalers</option>
+                      <option value="164">Saginaw Spirit</option>
+                      <option value="165">Sarnia Sting</option>
+                      <option value="166">Sault Ste. Marie Greyhounds</option>
+                      <option value="167">Sudbury Wolves</option>
+                      <option value="168">Windsor Spitfires</option>
+                      <option value="169">Acadie-Bathurst Titan</option>
+                      <option value="170">Baie-Comeau Drakkar</option>
+                      <option value="171">Blainville-Boisbriand QMJHL</option>
+                      <option value="172">Cape Breton Screaming Eagles</option>
+                      <option value="173">Chicoutimi Saguenéens</option>
+                      <option value="174">Drummondville Voltigeurs</option>
+                      <option value="175">Gatineau Olympiques</option>
+                      <option value="176">Halifax Mooseheads</option>
+                      <option value="177">Moncton Wildcats</option>
+                      <option value="178">P.E.I. Rocket</option>
+                      <option value="179">Québec Remparts</option>
+                      <option value="180">Rimouski Océanic</option>
+                      <option value="181">Rouyn-Noranda Huskies</option>
+                      <option value="182">Saint John Sea Dogs</option>
+                      <option value="183">Shawinigan Cataractes</option>
+                      <option value="184">Val-d'Or Foreurs</option>
+                      <option value="185">Victoriaville Tigres</option>
+                      <option value="186">Brandon Wheat Kings</option>
+                      <option value="187">Calgary Hitmen</option>
+                      <option value="188">Edmonton Oil Kings</option>
+                      <option value="189">Everett Silvertips</option>
+                      <option value="190">Kamloops Blazers</option>
+                      <option value="191">Kelowna Rockets</option>
+                      <option value="192">Kootenay Ice</option>
+                      <option value="193">Lethbridge Hurricanes</option>
+                      <option value="194">Medicine Hat Tigers</option>
+                      <option value="195">Moose Jaw Warriors</option>
+                      <option value="196">Portland Winter Hawks</option>
+                      <option value="197">Prince Albert Raiders</option>
+                      <option value="198">Prince George Cougars</option>
+                      <option value="199">Red Deer Rebels</option>
+                      <option value="200">Regina Pats</option>
+                      <option value="201">Saskatoon Blades</option>
+                      <option value="202">Seattle Thunderbirds</option>
+                      <option value="203">Spokane Chiefs</option>
+                      <option value="204">Swift Current Broncos</option>
+                      <option value="205">Tri-City Americans</option>
+                      <option value="206">Vancouver Giants</option>
+                      <option value="207">Victoria Royals</option>
+                      <option value="208">Top Prospects Red</option>
+                      <option value="209">Top Prospects White</option>
+                      <option value="210">EA Sports Legends</option>
+                      <option value="211">Pittsburgh Penguins® WC</option>
+                      <option value="212">Washington Capitals® WC</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+            <div class="ym-gr ym-g50">
+              <div class="ym-gbox-right">
+                <fieldset>
+                  <legend>Additional</legend>
+                  <div class="ym-fbox-select">
+                    <label for="find_lang">Spoken Language</label>
+                    <select name="find[lang]" id="find_lang">
+                      <option value="" selected="selected">Any</option>
+                      <option value="da">Danish</option>
+                      <option value="it">Italian</option>
+                      <option value="no">Norwegian</option>
+                      <option value="hu">Hungarian</option>
+                      <option value="cz">Czech</option>
+                      <option value="ko">Korean</option>
+                      <option value="zz">All</option>
+                      <option value="xx">Other</option>
+                      <option value="de">German</option>
+                      <option value="fi">Finnish</option>
+                      <option value="pt">Portuguese</option>
+                      <option value="pl">Polish</option>
+                      <option value="sv">Swedish</option>
+                      <option value="fr">French</option>
+                      <option value="en">English</option>
+                      <option value="ru">Russian</option>
+                      <option value="es">Spanish</option>
+                      <option value="ja">Japanese</option>
+                      <option value="nl">Dutch</option>
+                    </select>
+                  </div>
+
+                  <div class="ym-fbox-select">
+                    <label for="find_size">Club Size</label>
+                    <select name="find[size]" id="find_size">
+                      <option value="">Any</option>
+                      <option value="1-10">1 - 10</option>
+                      <option value="11-20">11 - 20</option>
+                      <option value="21-30">21 - 30</option>
+                      <option value="31-40">31 - 40</option>
+                      <option value="41-50">41 - 50</option>
+                    </select>
+                  </div>
+
+                  <div class="ym-fbox-select">
+                    <label for="find_region">Region</label>
+                    <select name="find[region]" id="find_region">
+                      <option value="">Any</option>
+                      <option value="1">North America West</option>
+                      <option value="2">North America East</option>
+                      <option value="3">Europe</option>
+                    </select>
+                  </div>
+
+                  <div class="ym-fbox-select">
+                    <label for="find_acceptJoinRequest">Join Requests</label>
+                    <select name="find[acceptJoinRequest]" id="find_acceptJoinRequest">
+                      <option value="">Any</option>
+                      <option value="true">Yes</option>
+                      <option value="false">No</option>
+                    </select>
+                  </div>
+                </fieldset>
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="ym-fbox-button">
+            <button class="ym-button ym-star">Search</button>
+          </div>
+
+          <div class="ym-hidden">
+            <input type="hidden" id="find_platform" name="find[platform]" value="PS3" />
+            <input type="hidden" id="do-search=submit" name="do-search" value="submit"/>
+          </div>
+        </form>
+      </section>
+      <footer id="footer" role="contentinfo">
+        <a id="contentinfo"></a>
+        <p>&copy; 2012 exrelax & exrefresh - MIT license</p>
+        <hr />
+        <p>Copyright (c) &lt;2012&gt; &lt;copyright exrelax & exrefresh&gt;</p>
+        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </footer>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/dev/vendor/jquery.js"><\/script>');
+    window.jQuery.migrateMute = true;
+  </script>
+
+  <script src="js/prod/main-0.1.0.js"></script>
+</body>
+</html>

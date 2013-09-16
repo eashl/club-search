@@ -1,0 +1,150 @@
+// SASS config file with vars
+//
+// @author             Michael Schulze
+// @version            $1.0$
+// @copyright          Michael Schulze, 30 March, 2012
+// @license            CC-BY 2.0 (http://creativecommons.org/licenses/by/2.0/),
+//                     YAML-CDL (http://www.yaml.de/license.html)
+//
+// @package            yaml,compass,sass
+// @-yaml-minver       4.0.1
+// @-sass-minver       2.0
+// @-compass-minver    0.12.0
+//
+// @lastmodified       $Date: 2012-03-30 15:08:24 +0200 (Fri, 30 Mar 2012) $
+
+// colors
+$c-bodybg: #ffffff;
+$c-white: #ffffff;
+$c-lila: #5e0952;
+$c-beige: #97874b;
+
+$c-text: #222;
+$c-text-link: #4D87C7;
+$c-text-link-hover: #4D87C7;
+$c-text-link-focus: #4D87C7;
+$c-text-link-visited: #4D87C7;
+$c-crypt: #ffffff; /* same as background color because that's the color of the additional dots in email addresses for spam protection (see setup.ts -> config) */
+
+$ym-font-sans           : "Open Sans", "Helvetica Neue", "Lucida Grande", Calibri, Helvetica, Arial, sans-serif;
+$ym-font-serif          : "Droid Serif", Georgia, "Times New Roman", Times, serif;
+$ym-font-monospace      : Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+
+$ym-iconfont  : "FontAwesome";
+
+$FontAwesomePath: "fonts/font-awesome/font";
+$FontAwesomeVersion: "3.2.1";
+$borderColor: #eeeeee;
+$iconMuted: #eeeeee;
+$iconLight: white;
+$iconDark: #333333;
+$icons-li-width: (30em/14);
+
+// Color Settings
+// ---------------------------------
+// standard typography colors
+$ym-text-color              : #111;
+$ym-headings-color          : #111;
+$ym-blockquote-text-color   : #666;
+$ym-blockquote-bg-color     : transparent;
+$ym-pre-text-color          : #800;
+$ym-kbd-text-color          : #666;
+$ym-mark-text-color         : #000;
+$ym-mark-bg-color           : #ff0;
+
+// highlight colors
+$ym-highlight-info-color    : #f4f4f4;
+$ym-highlight-success-color : #8c8;
+$ym-highlight-warning-color : #cc8;
+$ym-highlight-error-color   : #c88;
+
+// link colors
+$ym-link-text-color         : #ff6000;
+$ym-link-bg-color           : transparent;
+$ym-link-focus-text-color   : #ff6000;
+$ym-link-focus-bg-color     : transparent;
+
+// special colors
+$ym-hr-color                : #ccc;
+$ym-highlight-text-color    : #c30;
+$ym-dimmed-text-color       : #888;
+
+// layout
+$c-black                    : #000;
+$c-white                    : #fff;
+$c-bodybg                   : $c-black;
+$c-orange                   : #ffb011;
+
+// same as background color because that's the color of the additional dots in email addresses for spam protection (see setup.ts -> config)
+$c-crypt                    : #ffffff;
+
+$iccore-dealer-box-bg       : #393939;
+
+// Vertical Rhythm
+// ---------------------------------------------------
+// font values have to be defined in [px] without unit
+$ym-default-font-size       : 16;
+$ym-base-font-size          : 15;
+$ym-base-line-height        : 22;
+$base-margin                : 22;
+
+$ym-h1-font-size            : 46;
+$ym-h2-font-size            : 28;
+$ym-h3-font-size            : 22;
+$ym-h4-font-size            : 20;
+$ym-h5-font-size            : 18;
+$ym-h6-font-size            : 14;
+$ym-text-big-font-size      : 20;
+$ym-text-small-font-size    : 16;
+
+$font-size-body             : $ym-base-font-size / $ym-default-font-size * 100%;
+$line-height                : $ym-base-line-height / $ym-base-font-size;
+$std-margin                 : $base-margin / $ym-base-font-size * 1em;
+
+// scale factors (don't change - unless you know what you do)
+$ym-h1-font-scale           : $ym-h1-font-size / $ym-base-font-size;
+$ym-h2-font-scale           : $ym-h2-font-size / $ym-base-font-size;
+$ym-h3-font-scale           : $ym-h3-font-size / $ym-base-font-size;
+$ym-h4-font-scale           : $ym-h4-font-size / $ym-base-font-size;
+$ym-h5-font-scale           : $ym-h5-font-size / $ym-base-font-size;
+$ym-h6-font-scale           : $ym-h6-font-size / $ym-base-font-size;
+$ym-text-font-scale         : 1;
+$ym-text-big-font-scale     : $ym-text-big-font-size / $ym-base-font-size;
+$ym-text-small-font-scale   : $ym-text-small-font-size / $ym-base-font-size;
+
+////////////////////////////////////////////////////////////////////
+//
+// Print Module
+//
+////////////////////////////////////////////////////////////////////
+
+// Default Print Settings
+// ---------------------------------
+$ym-print-fontsize          : 10pt;
+$ym-print-abbreviation      : false;
+$ym-print-href              : false;
+
+// sprites
+//$icon: sprite-map("icon/*.png", $spacing: 20px, $layout: vertical);
+//$icon-retina: $icon;
+
+// CSS styled content (TYPO3 6.1)
+
+$styles-content-imgtext-borderClass     : "csc-textpic-border";
+$styles-content-imgtext-borderThick     : 1;
+$styles-content-imgtext-borderSpace     : 0;
+$styles-content-imgtext-borderColor     : #737373;
+$styles-content-imgtext-borderSelector  : "div." + $styles-content-imgtext-borderClass + " div.csc-textpic-imagewrap img";
+
+$styles-content-imgtext-rowSpace        : 10;
+$styles-content-imgtext-colSpace        : 10;
+
+$styles-content-imgtext-textMargin      : 10;
+
+$styles-content-table-backgroundColor-1     : #EDEBF1;
+$styles-content-table-backgroundColor-2     : #F5FFAA;
+$styles-content-table-backgroundColor-240   : black;
+$styles-content-table-backgroundColor-241   : white;
+$styles-content-table-backgroundColor-242   : #333;
+$styles-content-table-backgroundColor-243   : gray;
+$styles-content-table-backgroundColor-244   : silver;
